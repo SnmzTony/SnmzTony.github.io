@@ -1,0 +1,45 @@
+/* Diğer stiller burada */
+
+.page_404 {
+    padding: 40px 0;
+    background: #fff;
+    font-family: "Arvo", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  
+    /* Sayfanın scroll olmamasını sağlar */
+  }
+  
+  .four_zero_four_bg {
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 700px; /* Daha büyük bir yükseklik */
+    width: 900px; /* Daha büyük bir genişlik */
+    background-size: cover;
+    
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .four_zero_four_bg h1 {
+    font-size: 120px; /* Daha büyük metin boyutu */
+    margin-top: -200px;
+    margin-left: 300px;
+  }
+  
+  .link_404 {
+    color: #fff !important;
+    padding: 15px 30px; /* Daha büyük buton */
+    font-size: 18px; /* Daha büyük buton metni boyutu */
+    background: #39ac31;
+    margin: 20px 0;
+    margin-left: 50px;
+    display: inline-block;
+    border-radius: 15px;
+    text-decoration:none
+  }
+  .contant_box_404 {
+    margin-top: -50px;
+    margin-left: 300px;
+  }
