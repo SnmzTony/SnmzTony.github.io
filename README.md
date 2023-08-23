@@ -16,19 +16,7 @@ I'm someone who closely follows technology and continually strives to learn abou
 - Web Technologies: HTML, CSS
 - Development Areas: Frontend Web Development, Mobile App Development
 
-## Projects
 
-### [Project Name]
-Add a brief description.
-- [GitHub Repo or Live Demo Link]
-
-### [Project Name]
-Add a brief description.
-- [GitHub Repo or Live Demo Link]
-
-### [Project Name]
-Add a brief description.
-- [GitHub Repo or Live Demo Link]
 
 ## Hobbies and Interests
 
