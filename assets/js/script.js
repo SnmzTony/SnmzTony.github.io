@@ -134,7 +134,27 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+// Tarayıcı dilini alın
+var userLanguage = navigator.language || navigator.userLanguage;
 
+// Kullanıcının tercih ettiği dilin kodunu alın (örneğin, "tr", "en", "de")
+var languageCode = userLanguage.substr(0, 2);
+
+// Tarayıcı diline göre sayfa URL'sini oluşturun
+var languageURL = '/' + languageCode + '.html';
+
+// Şu anki sayfa URL'sini alın
+var currentURL = window.location.pathname;
+
+// Tarayıcıda bir çerez kullanarak daha önce yönlendirme yapıldı mı kontrol edin
+var isFirstVisit = sessionStorage.getItem("isFirstVisit");
+
+// Eğer tarayıcı diline göre sayfa URL'si şu anki URL ile aynı değilse ve daha önce yönlendirme yapılmadıysa, yönlendirin ve işaretle
+if (currentURL !== languageURL && !isFirstVisit) {
+    window.location.href = languageURL + window.location.search;
+    // Yönlendirme yapıldı, oturum saklamayı işaretle
+    sessionStorage.setItem("isFirstVisit", "true");
+}
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");

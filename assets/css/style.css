@@ -198,7 +198,7 @@ article {
 }
 
 .icon-box::before {
-  content: "";
+  content: " ";
   position: absolute;
   inset: 1px;
   background: var(--eerie-black-1);
@@ -290,6 +290,7 @@ article.active {
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
+  
 }
 
 
@@ -329,6 +330,30 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
+}
+
+.p-container {
+  display: flex;
+}
+
+.clickable-text {
+  color: hsl(35, 100%, 68%);
+  margin-right: 10px;
+  cursor: pointer; /* Fare imlecini el göstergesi yapar */
+  transition: color 0.3s;
+  text-decoration: none; /* Renk değişimini yumuşatır */
+}
+
+.clickable-text:hover {
+  color: red;
+  font-weight: bold; /* Üzerine gelince renk değişir */
+}
+
+.clicked-text{
+  margin-right: 10px;
+  cursor: pointer; /* Fare imlecini el göstergesi yapar */
+ color: red;
+  text-decoration: none; /* Renk değişimini yumuşatır */
 }
 
 .avatar-box {
