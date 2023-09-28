@@ -82,9 +82,16 @@ const filterFunc = function (selectedValue) {
 
   for (let i = 0; i < filterItems.length; i++) {
 
-    if (selectedValue === "all") {
+    if (selectedValue === "tüm kategori" ) {    
       filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
+    }
+    else if (selectedValue === "all" ) {
+      filterItems[i].classList.add("active");
+    }
+    else if (selectedValue === "alles" ) {
+      filterItems[i].classList.add("active");
+    }
+    else if (selectedValue === filterItems[i].dataset.category) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
@@ -142,6 +149,7 @@ var languageCode = userLanguage.substr(0, 2);
 
 // Tarayıcı diline göre sayfa URL'sini oluşturun
 var languageURL = '/' + languageCode + '.html';
+
 
 // Şu anki sayfa URL'sini alın
 var currentURL = window.location.pathname;

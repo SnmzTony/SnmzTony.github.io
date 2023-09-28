@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="UTF-8">
@@ -53,7 +53,7 @@
 
         <div class="p-container">
           <a href="tr.html" class="clickable-text">Tr</a>
-          <a href="de.html" class="clicked-text">De</a>
+          <p class="clicked-text">De</p>
           <a href="index.html" class="clickable-text">En</a>
       </div>
           
@@ -191,23 +191,23 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active" data-nav-link>Über Mich</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>Lebenslauf</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Depot</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Certificate</button>
+            <button class="navbar-link" data-nav-link>Zertifikat</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link>Kontakt</button>
           </li>
 
         </ul>
@@ -222,7 +222,7 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about  active" data-page="über mich">
 
         <header>
           <h2 class="h2 article-title">Wer bin ich?</h2>
@@ -358,7 +358,7 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="resume" data-page="lebenslauf">
 
         <header>
           <h2 class="h2 article-title">Lebenslauf</h2>
@@ -556,7 +556,7 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="depot">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -567,17 +567,17 @@
           <ul class="filter-list">
 
             <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
+              <button class="active" data-filter-btn>Alles</button>
             </li>
 
           
 
             <li class="filter-item">
-              <button data-filter-btn> Mobile Applications</button>
+              <button data-filter-btn> Mobile Anwendungen</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Webentwicklungt</button>
             </li>
 
           </ul>
@@ -586,7 +586,7 @@
 
             <button class="filter-select" data-select>
 
-              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-value" data-selecct-value>Kategorie wählen</div>
 
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
@@ -598,20 +598,20 @@
             <ul class="select-list">
 
               <li class="select-item">
-                <button data-select-item>All</button>
+                <button data-select-item>alles</button>
               </li>
 
+              <li class="select-item">
+                <button data-select-item>Webentwicklungt</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Mobile Anwendungen</button>
+              </li>
+<!-- 
               <li class="select-item">
                 <button data-select-item>Web Development</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Mobile Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web Development</button>
-              </li>
+              </li> -->
 
             </ul>
 
@@ -619,7 +619,7 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="webentwicklungt">
               <a href="https://github.com/SnmzTony/Okey-Games" target="_blank">
 
                 <figure class="project-img">
@@ -636,26 +636,9 @@
 
               </a>
             </li>
-<!-- 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Ekotel</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li> -->
-
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="webentwicklungt">
               <a href="https://github.com/SnmzTony/MovieWatchProject" target="_blank">
 
                 <figure class="project-img">
@@ -673,7 +656,25 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="mobile applications">
+            <li class="project-item  active" data-filter-item data-category="webentwicklungt">
+              <a href="http://www.erisimotomasyon.com/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/erisimweb.jpeg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Web-Erisim</h3>
+
+                <p class="project-category">Webentwicklung</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mobile anwendungen">
               <a href="#" target="_blank">
 
                 <figure class="project-img">
@@ -745,7 +746,7 @@
               </a>
             </li> -->
 
-            <li class="project-item  active" data-filter-item data-category="mobile applications">
+            <li class="project-item  active" data-filter-item data-category="mobile anwendungen">
               <a href="https://github.com/SnmzTony/bootcamp-f37" target="_blank">
 
                 <figure class="project-img">
@@ -795,7 +796,7 @@
         - #certificate
       -->
 
-      <article class="certificate" data-page="certificate">
+      <article class="certificate" data-page="zertifikat">
 
         <header>
           <h2 class="h2 article-title"></h2>
@@ -986,7 +987,7 @@
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+      <article class="contact" data-page="kontakt">
 
         <header>
           <h2 class="h2 article-title">Kontakt</h2>

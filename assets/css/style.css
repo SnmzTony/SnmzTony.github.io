@@ -381,8 +381,8 @@ main {
 
 .info_more-btn {
   position: absolute;
-  top: -15px;
-  right: -15px;
+  top: -5px;
+  right: -5px;
   border-radius: 0 15px;
   font-size: 13px;
   color: var(--orange-yellow-crayola);
@@ -1441,6 +1441,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 30px;
     padding-bottom: 35px;
   }
+
+  
+
 
   .content-card {
     padding: 30px;
